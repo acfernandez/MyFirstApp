@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MyActivity extends AppCompatActivity {
 
@@ -26,6 +27,11 @@ public class MyActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void onButtonTap(View v) {
+        final Toast t = Toast.makeText(getApplicationContext(), "Ouch!!", Toast.LENGTH_LONG);
+        t.show();
     }
 
     @Override
